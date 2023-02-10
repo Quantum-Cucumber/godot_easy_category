@@ -10,10 +10,11 @@ func can_handle(_object: Object) -> bool:
 	return true
 	
 
-func parse_property(_object: Object, _type: int, path: String, _hint: int, _hint_text: String, _usage: int) -> bool:
+func parse_property(object: Object, _type: int, path: String, _hint: int, _hint_text: String, _usage: int) -> bool:
 	if path.begins_with(PREFIX):
 		var category = category_scene.instance()
 		category.label = _format_path(path)
+		category.icon = object.get(path)
 		add_custom_control(category)
 		return true
 	return false
