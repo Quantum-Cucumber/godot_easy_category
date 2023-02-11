@@ -5,6 +5,7 @@ A godot plugin to easily add categories to the property inspector panel. This pr
 Benefits:
 - Easily customisable look via a control scene
 - Uses the colours for the editor's theme to more closely match the normal category separator
+- Add icons next to the category label
 - Automatic case conversion
 
 
